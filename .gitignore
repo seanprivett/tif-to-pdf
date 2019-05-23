@@ -1,2 +1,8 @@
 # python libraries
 venv/
+
+# tiff input files
+tiff/
+
+# pdf output files
+pdf/
