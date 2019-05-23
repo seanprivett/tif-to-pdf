@@ -16,7 +16,7 @@ for frame in range(0, image.n_frames):
     parsing += image_to_string(image)
     parsing += '\n'
 
-# these characters were causing the pdf write process to fail with a latin vs unicode spat
+# replace characters that latin doesn't like
 parsing = parsing.replace('\u2018', "'")
 parsing = parsing.replace('\u2019', "'")
 parsing = parsing.replace('\u201c', '"')
